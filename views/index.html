@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Confer</title>
+    <meta charset=utf-8>
+    <meta name=description content="Confer">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="script.js"></script> 
+</head>
+
+<body>
+    <div id="center">
+        <div id="option">
+            <nav class="opcion">
+                <div class="op1">
+                    <p>Crear sala</p>
+                </div>
+                <div class="op2">
+                    <p>Ingresar en la sala</p>
+                </div>
+            </nav>
+            <div id="create">
+               
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+var app = new Vue({
+    el: '#center',
+    data: {
+        message: 'Hello Vue!'
+    }
+});
+</script>
+
+</html>

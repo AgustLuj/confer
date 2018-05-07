@@ -1,0 +1,17 @@
+DOCTYPE(html)
+html
+	head
+		title Confer
+		script(src="https://code.jquery.com/jquery-1.10.2.js")
+		script(src="https://cdn.jsdelivr.net/npm/vue")
+			
+		if type
+			script(type="text/javascript" src="socket.io/socket.io.js")
+			script(src="script.js")
+			link(rel="stylesheet" type="text/css" href="style.css")
+		else
+			script(type="text/javascript" src="../socket.io/socket.io.js")
+			script(src="../script.js")
+			link(rel="stylesheet" type="text/css" href="../style.css")
+	body
+		block contenido		

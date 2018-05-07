@@ -1,0 +1,25 @@
+extends ./layout.pug
+block contenido
+	h1.bien Bienvendio a la sala #{id}
+	div#center-user
+		div#option-user
+			nav.opcion-user
+				div.op1-user
+					p Informacion Importante
+				div.op2-user
+					p Encuenstas
+				div.op3-user
+					p Preguntas para el expositor
+			div#info
+				p #{room.info} con la tematica #{id}
+			div#encuen
+				form(action="/votar" method="POST")
+					each valu, index in room.encues
+						p=valu.preg
+						each val in valu.en
+							input(type="radio" name="encues" value=val)
+							label=val
+							br
+						input(type="submit" name="finish" value="Votar")
+			div#pregs
+				p hola2

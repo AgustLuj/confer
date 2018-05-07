@@ -1,0 +1,99 @@
+body{
+	margin: 0px;
+	font-family: "arial", Georgia, Serif;
+}
+#center{
+	height: 250px ;
+	width: 300px;
+	margin: auto;
+	margin-top: 150px;
+}
+#login{
+	display: none;
+}
+#option{
+	height: 220px ;
+	width: 300px;
+	border: 1px solid;
+}
+.opcion{
+	height: 30px ;
+	width: 300px;
+}
+.op1,.op2{
+	height: 30px ;
+	width: 149px;
+	float: left;
+	margin-bottom: 10px;
+	border-bottom: 1px solid;
+}
+.op1 p ,.op2 p{
+	text-align: center;
+	margin-top:5px;
+	cursor: pointer;
+}
+.op1{
+	border-right: 1px solid;
+	border-bottom: 0px solid;
+}
+#form h1{
+	text-align: center;
+}
+#form form input{
+	margin-top: 1px;
+	margin-left: 64px;
+}
+#form form input[type=submit]{
+	margin-top: 3px;
+	margin-left: 125px;
+	border-bottom-width: 
+}
+/************ Usuarios ************************************************/
+#center-user{
+	width: 600px;
+	overflow:hidden;
+	border: 1px solid;
+	margin: auto;
+	margin-top: 150px;
+}
+#option-user{
+	width: 600px;
+	overflow:hidden;
+	border-bottom-width: 1px;
+}
+.opcion-user{
+	width: 600px;
+	height: 30px ;
+}
+.op1-user,.op2-user,.op3-user{
+	width: 199px;
+	height: 30px ;
+	float: left;
+	margin-bottom: 10px;
+	border-bottom: 1px solid;
+}
+.op1-user p ,.op2-user p,.op3-user p{
+	text-align: center;
+	margin-top:5px;
+	cursor: pointer;
+}
+.op2-user{
+	border-right: 1px solid;
+}
+.op1-user{
+	border-right: 1px solid;
+	border-bottom: 0px solid;
+}
+.bien{
+	text-align: center;
+}
+.err{
+	color: red;
+	font-size: 15px;
+	text-align: center;
+	margin: 0px;
+}
+#encuen,#pregs{
+	opacity: 0;
+	display: none;
+}

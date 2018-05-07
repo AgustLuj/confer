@@ -1,0 +1,42 @@
+extends ./layout.pug
+block contenido
+	h1(style="text-align: center") Bienvenidos a Confer
+	div#center
+		div#option
+			nav.opcion
+				div.op1
+					p Crer sala
+				div.op2
+					p Ingresar en la sala
+			div#create
+				div#form
+					h1.create Crear la sala
+					form(action="/create" method="POST")
+						input(type="text" name="name" placeholder="Nombre de la sala")
+						br
+						input(type="text" name="pass" placeholder="Contraseña")
+						br
+						input(type="submit" name="create" value="Crear")
+						br
+			div#login
+				div#form
+					h1(class="login") Ingresar en la sala
+					if err
+						p.err Porfavor ingrese bien los datos
+					form(action="/login" method="POST")
+						input(type="text" name="id" placeholder="ID de la sala")
+						br
+						input(type="text" name="pass" placeholder="pass" class="pas" style="display:none")
+						input(type="checkbox" name="exp" class="check")
+						label ingresar como expositor
+						br
+						input(type="submit" name="login" value="Login")
+						br
+	if err
+		script
+			include script.js
+		script.
+			var data = true;
+	else
+		script.
+			var data = false;
